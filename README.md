@@ -57,25 +57,28 @@ https://mathquizbattlearena.netlify.app/
 
 ## 📂 Project Structure
 
+```
 Math-Quiz-Battle-Arena
 │
 ├── assets
-│ ├── logo.png
-│ └── Video.mp4
+│   ├── logo.png
+│   └── Video.mp4
 │
 ├── CSS
-│ ├── style.css
-│ ├── index.css
-│ ├── quiz.css
-│ ├── leaderboard.css
-│ └── forum.css
+│   ├── style.css
+│   ├── index.css
+│   ├── levels.css
+│   ├── quiz.css
+│   ├── leaderboard.css
+│   ├── forum.css
+│   └── result.css
 │
 ├── JS
-│ ├── main.js
-│ ├── quiz.js
-│ ├── leaderboard.js
-│ ├── forum.js
-│ └── result.js
+│   ├── main.js
+│   ├── quiz.js
+│   ├── leaderboard.js
+│   ├── forum.js
+│   └── result.js
 │
 ├── index.html
 ├── levels.html
@@ -83,8 +86,23 @@ Math-Quiz-Battle-Arena
 ├── leaderboard.html
 ├── forum.html
 └── result.html
+```
 
+---
 
+### Description
+
+| Folder/File | Purpose |
+|-------------|--------|
+| **assets/** | Stores images, logos, and video background |
+| **CSS/** | Contains all styling files for different pages |
+| **JS/** | Contains JavaScript logic for quiz, leaderboard, forum, and main functionality |
+| **index.html** | Homepage of the application |
+| **levels.html** | Difficulty selection and player name input |
+| **quiz.html** | Quiz gameplay interface |
+| **leaderboard.html** | Displays top players and rankings |
+| **forum.html** | Discussion area for players |
+| **result.html** | Displays quiz results after completion |
 ---
 
 ## 🎮 How the Quiz Works
@@ -97,22 +115,6 @@ Math-Quiz-Battle-Arena
    - Correct answers
    - Total time taken
 6. Your score is saved to the **leaderboard**.
-
----
-
-## 📸 Screenshots
-
-### Home Page
-_Add screenshot here_
-
-### Quiz Page
-_Add screenshot here_
-
-### Leaderboard
-_Add screenshot here_
-
-### Forum
-_Add screenshot here_
 
 ---
 
@@ -137,5 +139,3 @@ Clone the repository:
 git clone https://github.com/yourusername/math-quiz-battle-arena.git
 ```
 
-```bash
-git clone https://github.com/yourusername/math-quiz-battle-arena.git
