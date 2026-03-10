@@ -1,0 +1,354 @@
+.home {
+    max-width: 900px;
+    margin: 120px 100px;
+    overflow: visible;
+    text-align: left;
+    padding: 40px 0px;
+    position: relative;
+    z-index: 5;
+}
+
+.home h1 {
+    font-size: 90px;
+    line-height: 85px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: var(--studio-black);
+    position: relative;
+    text-shadow: 4px 4px 0px rgba(138, 92, 246, 0.516);
+}
+
+
+.home h1::before {
+    content: "READY?";
+    position: absolute;
+    top: -70px;
+    left: 5px;
+    font-size: 30px;
+    letter-spacing: 20px;
+    color: var(--accent);
+    text-shadow: 4px 4px 0px rgba(183, 154, 250, 0.516);
+    font-weight: 800;
+}
+
+.home h1 span {
+    letter-spacing: 2px;
+}
+
+.home p {
+    font-size: 24px;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-bottom: 50px;
+    max-width: 580px;
+    line-height: 1.4;
+    border-left: 6px solid var(--accent);
+    padding-left: 25px;
+    text-shadow: 4px 4px 0px rgba(139, 92, 246, 0.2);
+}
+
+.home button {
+    padding: 25px 65px;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: var(--studio-black);
+    color: var(--studio-white);
+    border: 4px solid var(--studio-black);
+    cursor: pointer;
+    box-shadow: 12px 12px 0px var(--accent);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.home button:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 18px 18px 0px var(--studio-black);
+    background: var(--accent);
+    border: 4px solid var(--accent);
+
+}
+
+.home button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px var(--studio-black);
+}
+
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 80px;
+    pointer-events: none;
+    padding-right: 60px;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.9;
+    filter: drop-shadow(7px 7px 0px rgba(138, 92, 246, 0.516));
+    transition: transform 0.7s ease;
+}
+
+.shape svg {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(var(--r));
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(var(--r));
+    }
+
+    100% {
+        transform: translateY(0) rotate(var(--r));
+    }
+}
+
+.multiply {
+    --r: 12deg;
+    animation: float 8s ease-in-out infinite;
+}
+
+.plus {
+    --r: -8deg;
+    animation: float 9s ease-in-out infinite;
+}
+
+.percent {
+    --r: -12deg;
+    animation: float 7s ease-in-out infinite;
+}
+
+.divide {
+    --r: 15deg;
+    animation: float 10s ease-in-out infinite;
+}
+
+.multiply {
+    top: -40px;
+    right: -500px;
+    width: 110px;
+    transform: rotate(12deg);
+}
+
+.plus {
+    top: 150px;
+    right: -300px;
+    width: 120px;
+    transform: rotate(-8deg);
+}
+
+.percent {
+    top: 300px;
+    right: -600px;
+    width: 120px;
+    transform: rotate(-12deg);
+}
+
+.divide {
+    bottom: -40px;
+    right: -300px;
+    width: 130px;
+    transform: rotate(15deg);
+}
+
+.strip {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background: var(--accent);
+    color: white;
+    padding: 12px 0;
+    overflow: hidden;
+    border-top: 4px solid var(--studio-black);
+    border-bottom: 4px solid var(--studio-black);
+}
+
+.text {
+    white-space: nowrap;
+    font-weight: 800;
+    letter-spacing: 2px;
+    animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.arena_links {
+    padding: 120px 100px;
+    text-align: center;
+}
+
+.arena_links h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 80px;
+}
+
+.arena_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.arena_card {
+    width: 260px;
+    padding: 40px;
+    background: var(--studio-white);
+    border: 4px solid var(--studio-black);
+    box-shadow: 12px 12px 0px var(--accent);
+    text-decoration: none;
+    color: var(--studio-black);
+    transition: 0.2s ease;
+}
+
+.arena_card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 18px 18px 0px var(--studio-black);
+}
+
+.arena_card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.arena_card p {
+    opacity: 0.7;
+}
+
+.pricing {
+    margin-top: -70px;
+    padding: 120px 100px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 80px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pricing_card {
+    width: 280px;
+    padding: 40px;
+    background: white;
+    border: 4px solid var(--studio-black);
+    box-shadow: 12px 12px 0px var(--accent);
+    transition: 0.2s ease;
+}
+
+.pricing_card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 18px 18px 0px var(--studio-black);
+}
+
+.pricing_card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.pricing_card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.pricing_card li {
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.pricing_card button {
+    padding: 14px 35px;
+    font-weight: 700;
+    border: 3px solid var(--studio-black);
+    background: var(--studio-black);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.pricing_card:hover button {
+    background: var(--accent);
+    border: 3px solid var(--accent);
+}
+
+.premium {
+    box-shadow: 12px 12px 0px purple;
+}
+
+.tournament {
+    box-shadow: 12px 12px 0px var(--studio-black);
+}
+
+@media (max-width: 768px) {
+    .home {
+        margin: 80px 20px;
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .home h1::before {
+        top: -50px;
+        font-size: 20px;
+    }
+
+    .home p {
+        font-size: 18px;
+        max-width: none;
+        padding-left: 15px;
+    }
+
+    .arena_links,
+    .pricing {
+        padding: 80px 20px;
+    }
+
+    .arena_links h2,
+    .pricing h2 {
+        font-size: 32px;
+    }
+
+    .arena_grid,
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}

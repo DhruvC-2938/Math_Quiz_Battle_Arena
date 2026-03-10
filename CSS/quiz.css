@@ -1,0 +1,133 @@
+.title {
+    text-align: center;
+    margin-top: clamp(40px, 6vw, 100px);
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 4px 4px 0px rgba(138, 92, 246, 0.5);
+}
+
+.card {
+    max-width: 800px;
+    margin: 60px auto;
+    background: var(--studio-white);
+    border: 4px solid var(--studio-black);
+    box-shadow: 14px 14px 0px var(--accent);
+    padding: 40px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e5e5e5;
+    border: 3px solid var(--studio-black);
+    margin-bottom: 30px;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+#question {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.option {
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 700;
+    background: var(--studio-white);
+    border: 4px solid var(--studio-black);
+    box-shadow: 8px 8px 0px var(--accent);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.option:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px var(--studio-black);
+    background: var(--accent);
+    color: white;
+}
+
+.option:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px var(--studio-black);
+}
+
+#score,
+#timer {
+    font-size: 14px;
+    padding: 8px 12px;
+    white-space: nowrap;
+    background: var(--studio-white);
+    border: 4px solid var(--studio-black);
+    box-shadow: 4px 4px 0px var(--accent);
+}
+
+#timer {
+    color: red;
+}
+
+#score {
+    color: green;
+}
+
+.correct {
+    background: #22c55e !important;
+    color: white;
+    border-color: #166534;
+    box-shadow: 6px 6px 0px #14532d;
+}
+
+.wrong {
+    background: #ef4444 !important;
+    color: white;
+    border-color: #7f1d1d;
+    box-shadow: 6px 6px 0px #7f1d1d;
+}
+
+.option.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.option.disabled:hover {
+    transform: none;
+    box-shadow: 12px 12px 0px var(--accent);
+    background: var(--studio-white);
+    color: var(--studio-black);
+}
+
+@media (max-width:480px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}

@@ -1,0 +1,99 @@
+.section {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.title {
+    font-size: clamp(32px, 6vw, 60px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 60px;
+    text-shadow: 4px 4px 0px rgba(138, 92, 246, 0.5);
+
+}
+
+.card {
+    margin: 0 auto;
+    padding: 40px 24px;
+    max-width: 420px;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    background: var(--studio-white);
+    border: 4px solid var(--studio-black);
+    box-shadow: 10px 10px 0px var(--accent);
+}
+
+#name {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 0px rgba(138, 92, 246, 0.5);
+    color: var(--accent);
+}
+
+.score {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#final_score {
+    color: var(--accent);
+}
+
+#result {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn1,
+.btn2 {
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: var(--studio-white);
+    border: 4px solid var(--studio-black);
+    box-shadow: 8px 8px 0px var(--accent);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.btn1:hover,
+.btn2:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px var(--studio-black);
+    background: var(--accent);
+    color: white;
+}
+
+.btn1:active,
+.btn2:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0px var(--studio-black);
+}
+
+@media (max-width:768px) {
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 100%;
+    }
+
+}
