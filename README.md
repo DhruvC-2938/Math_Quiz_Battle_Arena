@@ -56,25 +56,26 @@ https://mathquizbattlearena.netlify.app/
 ---
 
 ## 📂 Project Structure
+
 Math-Quiz-Battle-Arena
 │
 ├── assets
-│   ├── logo.png
-│   └── Video.mp4
+│ ├── logo.png
+│ └── Video.mp4
 │
 ├── CSS
-│   ├── style.css
-│   ├── index.css
-│   ├── quiz.css
-│   ├── leaderboard.css
-│   └── forum.css
+│ ├── style.css
+│ ├── index.css
+│ ├── quiz.css
+│ ├── leaderboard.css
+│ └── forum.css
 │
 ├── JS
-│   ├── main.js
-│   ├── quiz.js
-│   ├── leaderboard.js
-│   ├── forum.js
-│   └── result.js
+│ ├── main.js
+│ ├── quiz.js
+│ ├── leaderboard.js
+│ ├── forum.js
+│ └── result.js
 │
 ├── index.html
 ├── levels.html
@@ -99,6 +100,22 @@ Math-Quiz-Battle-Arena
 
 ---
 
+## 📸 Screenshots
+
+### Home Page
+_Add screenshot here_
+
+### Quiz Page
+_Add screenshot here_
+
+### Leaderboard
+_Add screenshot here_
+
+### Forum
+_Add screenshot here_
+
+---
+
 ## 💾 Data Storage
 
 The project uses **LocalStorage** to store:
@@ -115,6 +132,10 @@ This allows the app to function **without a backend server**.
 ## 📦 Installation (Run Locally)
 
 Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/math-quiz-battle-arena.git
+```
 
 ```bash
 git clone https://github.com/yourusername/math-quiz-battle-arena.git
