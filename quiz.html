@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/quiz.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <video autoplay muted loop class="navbar_video">
+            <source src="assets/Video.mp4" type="video/mp4">
+        </video>
+
+        <div class="nav_container">
+            <div class="logo">
+                <img src="assets/slogo.png" alt="Math Quiz Arena Logo">
+            </div>
+
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="levels.html">Play</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+                        <div class="user_area" id="userArea">
+                <div class="avatar">👤</div>
+                <span id="navUser">Sign In</span>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+    <h1 class="title">Math Challenge</h1>
+    <div class="card">
+        <div class="header">
+            <span id="number">Question 1</span>
+            <span id="score">Score: 0</span>
+            <span id="timer">Time: 10</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <p id="question">
+            What is 8 × 7 ?
+        </p>
+        <div class="options">
+            <button class="option" id="option1">54</button>
+            <button class="option" id="option2">56</button>
+            <button class="option" id="option3">64</button>
+            <button class="option" id="option4">49</button>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <h3>Math Quiz Battle Arena</h3>
+        <div class="footer_links">
+            <a href="index.html">Home</a>
+            <span>|</span>
+            <a href="levels.html">Play</a>
+            <span>|</span>
+            <a href="leaderboard.html">Leaderboard</a>
+            <span>|</span>
+            <a href="forum.html">Forum</a>
+        </div>
+        <p>© 2025 Math Quiz Battle Arena</p>
+    </footer>
+    <script src="JS/main.js"></script>
+    <script src="JS/quiz.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz Battle Arena</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <video autoplay muted loop class="navbar_video">
+            <source src="assets/Video.mp4" type="video/mp4">
+        </video>
+        <div class="nav_container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Math Quiz Arena Logo">
+                </a>
+            </div>
+            <ul class="nav_links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="levels.html">Play</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+            <div class="user_area" id="userArea">
+                <div class="avatar">👤</div>
+                <span id="navUser">Sign In</span>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+
+
+        <section class="home">
+
+            <h1>Welcome to Math Quiz <span>Battle</span> Arena</h1>
+
+            <p>Test your math skills and compete with others.</p>
+
+            <a href="levels.html">
+                <button>Start Quiz</button>
+            </a>
+
+            <div class="floating_shapes">
+
+                <svg class="shape multiply" viewBox="0 0 100 100">
+                    <rect x="40" y="-10" width="20" height="120" fill="#0a0a0a" stroke="rgba(0,0,0,0.2)"
+                        stroke-width="3" transform="rotate(45 50 50)" />
+
+                    <rect x="40" y="-10" width="20" height="120" fill="#0a0a0a" stroke="rgba(0,0,0,0.2)"
+                        stroke-width="3" transform="rotate(-45 50 50)" />
+                </svg>
+
+                <svg class="shape plus" viewBox="0 0 100 100">
+                    <rect x="40" y="10" width="20" height="80" fill="#0a0a0a" stroke="rgba(0,0,0,0.2)"
+                        stroke-width="3" />
+
+                    <rect x="10" y="40" width="80" height="20" fill="#0a0a0a" stroke="rgba(0,0,0,0.2)"
+                        stroke-width="3" />
+                </svg>
+
+                <svg class="shape divide" viewBox="0 0 100 100">
+                    <circle cx="50" cy="20" r="12" fill="#0a0a0a" stroke="rgba(0,0,0,0.2)" stroke-width="3" />
+
+                    <rect x="10" y="42" width="80" height="16" fill="#0a0a0a" stroke="rgba(0,0,0,0.2)"
+                        stroke-width="3" />
+
+                    <circle cx="50" cy="80" r="12" fill="#0a0a0a" stroke="rgba(0,0,0,0.2)" stroke-width="3" />
+                </svg>
+
+                <svg class="shape percent" viewBox="0 0 100 100">
+                    <circle cx="25" cy="25" r="15" fill="none" stroke="#0a0a0a" stroke-width="13" />
+
+                    <rect x="45" y="-10" width="16" height="120" fill="#0a0a0a" stroke="rgba(0,0,0,0.2)"
+                        stroke-width="3" transform="rotate(45 50 50)" />
+
+                    <circle cx="75" cy="75" r="15" fill="none" stroke="#0a0a0a" stroke-width="13" />
+                </svg>
+
+            </div>
+        </section>
+        <div class="strip">
+            <div class="text">
+                THINK FAST • SOLVE SMART • MASTER MATH • BE THE CHAMPION •
+                THINK FAST • SOLVE SMART • MASTER MATH • BE THE CHAMPION •
+                THINK FAST • SOLVE SMART • MASTER MATH • BE THE CHAMPION •
+                THINK FAST • SOLVE SMART • MASTER MATH • BE THE CHAMPION •
+            </div>
+        </div>
+        <section class="arena_links">
+
+            <h2>Explore the Arena</h2>
+
+            <div class="arena_grid">
+
+                <a href="levels.html" class="arena_card">
+                    <h3>Play Quiz</h3>
+                    <p>Start solving math challenges.</p>
+                </a>
+
+                <a href="leaderboard.html" class="arena_card">
+                    <h3>Leaderboard</h3>
+                    <p>See top players and rankings.</p>
+                </a>
+
+                <a href="forum.html" class="arena_card">
+                    <h3>Forum</h3>
+                    <p>Discuss strategies with others.</p>
+                </a>
+
+            </div>
+
+
+        </section>
+        <div class="strip">
+            <div class="text">
+                SOLVE • SCORE • CLIMB THE LEADERBOARD • BECOME THE MATH CHAMPION •
+                SOLVE • SCORE • CLIMB THE LEADERBOARD • BECOME THE MATH CHAMPION •
+                SOLVE • SCORE • CLIMB THE LEADERBOARD • BECOME THE MATH CHAMPION •
+                SOLVE • SCORE • CLIMB THE LEADERBOARD • BECOME THE MATH CHAMPION •
+            </div>
+        </div>
+
+        <section class="pricing">
+            <h2>Choose Your Mode</h2>
+            <div class="grid">
+                <div class="pricing_card">
+                    <h3>Free <br>Mode</h3>
+                    <p class="price">Free</p>
+                    <ul>
+                        <li>Basic quiz levels</li>
+                        <li>Leaderboard access</li>
+                        <li>Forum discussions</li>
+                        <li>Progress tracking</li>
+                    </ul>
+                    <a href="levels.html">
+                        <br>
+                        <br>
+                        <button>Start Playing</button>
+                    </a>
+                </div>
+                <div class="pricing_card premium">
+                    <h3>Premium Mode</h3>
+                    <p class="price">Premium</p>
+                    <ul>
+                        <li>Advanced difficulty levels</li>
+                        <li>Exclusive math challenges</li>
+                        <li>Achievement badges</li>
+                        <li>Ranking tiers</li>
+                    </ul>
+                    <button disabled>Future Feature</button>
+                </div>
+                <div class="pricing_card tournament">
+                    <h3>Tournament Mode</h3>
+                    <p class="price">Coming Soon</p>
+                    <ul>
+                        <li>Live competitions</li>
+                        <li>Timed multiplayer quizzes</li>
+                        <li>Global leaderboard battles</li>
+                        <li>Special rewards</li>
+                    </ul>
+                    <button disabled>Coming Soon</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3>Math Quiz Battle Arena</h3>
+        <div class="footer_links">
+            <a href="index.html">Home</a>
+            <span>|</span>
+            <a href="levels.html">Play</a>
+            <span>|</span>
+            <a href="leaderboard.html">Leaderboard</a>
+            <span>|</span>
+            <a href="forum.html">Forum</a>
+        </div>
+        <p>© 2025 Math Quiz Battle Arena</p>
+    </footer>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
