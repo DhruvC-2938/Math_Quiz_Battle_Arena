@@ -90,6 +90,70 @@ Math-Quiz-Battle-Arena
 
 ---
 
+## 📂 Website Structure
+```
+Website
+│
+├── Navbar
+│   └── nav_container
+│        ├── logo
+│        ├── nav_links
+│        │    ├── Home
+│        │    ├── Play
+│        │    ├── Leaderboard
+│        │    └── Forum
+│        └── user_area
+│             ├── avatar
+│             └── player name / Sign In
+│
+├── Home Page (index.html)
+│   └── home
+│        ├── title
+│        ├── description
+│        ├── start button
+│        └── floating_shapes
+│
+├── Levels Page (levels.html)
+│   └── levels_container
+│        ├── easy_card
+│        ├── medium_card
+│        └── hard_card
+│
+├── Quiz Page (quiz.html)
+│   └── quiz_container
+│        ├── progress_bar
+│        ├── question_number
+│        ├── question
+│        ├── options
+│        │    ├── option1
+│        │    ├── option2
+│        │    ├── option3
+│        │    └── option4
+│        ├── timer
+│        └── score
+│
+├── Result Page (result.html)
+│   └── result_container
+│        ├── player_name
+│        ├── final_score
+│        ├── result_message
+│        └── play_again_button
+│
+├── Leaderboard Page (leaderboard.html)
+│   └── leaderboard_container
+│        ├── podium
+│        │    ├── first_place
+│        │    ├── second_place
+│        │    └── third_place
+│        └── leaderboard_table
+│
+└── Forum Page (forum.html)
+    └── forum_container
+         ├── comment_input
+         ├── post_button
+         └── comments_container
+```
+
 ### Description
 
 | Folder/File | Purpose |
